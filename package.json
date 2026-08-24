@@ -1,0 +1,20 @@
+{
+  "name": "adobe-destination-test-server",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "npm@11.16.0",
+  "description": "RTCDP HTTP API destination을 로컬에서 테스트하기 위한 간단한 Express 서버 (인증 없음)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "check": "node --check server.js"
+  },
+  "engines": {
+    "node": ">=20",
+    "npm": ">=10"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
