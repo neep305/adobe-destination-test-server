@@ -14,4 +14,9 @@ app.listen(PORT, () => {
   console.log(`  GET    /destination/logs  <- 수신된 payload 확인`);
   console.log(`  DELETE /destination/logs  <- 로그 초기화`);
   console.log(`  GET    /health            <- health check`);
+  console.log(
+    process.env.AUTH_TOKEN
+      ? '  Auth: Bearer token required on /destination/*'
+      : '  Auth: disabled (set AUTH_TOKEN env var to require a Bearer token)'
+  );
 });
